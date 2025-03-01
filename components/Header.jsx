@@ -2,6 +2,7 @@
 import { assets } from "@/Assets/assets";
 import axios from "axios";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 
@@ -30,9 +31,9 @@ const Header = () => {
           alt=""
           className="w-[130px] sm:w-auto"
         />
-        <button className="flex items-center gp-2 font-medium py-1 px-3 sm:py-3 sm:px-6 border border-solid rounded-full border-black shadow-[-5px_5px_12px_magenta]">
+        <Link href={'admin/addProduct'} className="flex items-center gp-2 font-medium py-1 px-3 sm:py-3 sm:px-6 border border-solid rounded-full border-black shadow-[-5px_5px_12px_magenta]">
           get started <Image src={assets.arrow} />
-        </button>
+        </Link>
       </div>
       <div className="text-center my-8">
         <h1 className="text-3xl sm:text-5xl font-medium"> Latest Blogs</h1>
